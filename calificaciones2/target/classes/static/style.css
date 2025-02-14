@@ -1,0 +1,122 @@
+/* Fuentes y colores */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contenedor */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Botones */
+.btn {
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    border: none;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    border: none;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #f2994a, #f2c94c);
+    border: none;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #e53935, #e35d5b);
+    border: none;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+    border: none;
+}
+
+/* Inputs */
+input.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+input.form-control:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Tabla */
+.table {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.table tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, .table, .btn, input {
+    animation: fadeInUp 0.8s ease-out;
+}
+/* Ajustar el color del texto en el gráfico */
+/* Estilo para el canvas con un tamaño más pequeño y mejor visibilidad */
+canvas {
+    background-color: antiquewhite; /* Fondo más oscuro para mejorar la visibilidad */
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px; /* Espacio adicional para separar el gráfico de otros elementos */
+    max-width: 80%; /* Reducir el tamaño al 80% de su contenedor */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
